@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pySkypeBotApi.iml" filepath="$PROJECT_DIR$/.idea/pySkypeBotApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/skypeBot.iml" filepath="$PROJECT_DIR$/.idea/skypeBot.iml" />
     </modules>
   </component>
 </project>

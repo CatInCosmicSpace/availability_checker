@@ -1,0 +1,5 @@
+google.com
+8.8.8.8
+ya.ru
+google.fr
+this-address-does-not-exists.com
