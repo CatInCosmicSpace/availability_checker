@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="availability_checker" targetName="availability_checker" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DTARGET_64=ON" BUILD_OPTIONS="-j4" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58892948-a0ce-4a7d-9a58-295ffe2d88e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullchain.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httpslib.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/aes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/asn1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/asn1_mac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/asn1err.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/asn1t.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/async.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/asyncerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/bio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/bioerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/blowfish.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/bn.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/bnerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/buffer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/buffererr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/camellia.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/cast.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/cmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/cms.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/cmserr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/comp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/comperr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/conf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/conf_api.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/conferr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/crypto.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/cryptoerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/cterr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/des.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/dh.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/dherr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/dsa.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/dsaerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/dtls1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/e_os2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ebcdic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ec.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ecdh.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ecdsa.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ecerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/engine.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/engineerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/err.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/evp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/evperr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/hmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/idea.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/kdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/kdferr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/lhash.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/md2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/md4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/md5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/mdc2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/modes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/obj_mac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/objects.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/objectserr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ocsp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ocsperr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/opensslconf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/opensslv.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ossl_typ.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/pem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/pem2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/pemerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/pkcs12.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/pkcs12err.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/pkcs7.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/pkcs7err.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/rand.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/rand_drbg.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/randerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/rc2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/rc4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/rc5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ripemd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/rsa.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/rsaerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/safestack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/seed.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/sha.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/srp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/srtp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ssl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ssl2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ssl3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/sslerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/stack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/store.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/storeerr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/symhacks.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/tls1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ts.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/tserr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/txt_db.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/ui.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/uierr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/whrlpool.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/x509.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/x509_vfy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/x509err.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/x509v3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/openssl/x509v3err.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/libcrypto.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/libcrypto.dll.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/libssl.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/libssl.dll.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pkgconfig/libcrypto.pc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pkgconfig/libssl.pc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pkgconfig/openssl.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1OhOKlYgeuEBYFwccZqnFbtV951" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\catin\Documents\Github\availability_checker" />
+      <recent name="C:\Users\catin\Documents\Github\availability_checker\cmake-build-debug" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\catin\Documents\Github\availability_checker\cmake-build-debug" />
+      <recent name="C:\Users\catin\Documents\Github\availability_checker" />
+      <recent name="C:\Users\Admin\Desktop\availability_checker\cmake-build-debug" />
+      <recent name="C:\Users\catin\CLionProjects\availability_checker\cmake-build-debug" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="availability_checker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="availability_checker" TARGET_NAME="availability_checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="availability_checker" RUN_TARGET_NAME="availability_checker">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58892948-a0ce-4a7d-9a58-295ffe2d88e9" name="Default Changelist" comment="" />
+      <created>1564426300448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564426300448</updated>
+      <workItem from="1564426308801" duration="2796000" />
+      <workItem from="1564429256442" duration="5527000" />
+      <workItem from="1564483375634" duration="2693000" />
+      <workItem from="1564486113750" duration="2426000" />
+      <workItem from="1564507794947" duration="951000" />
+      <workItem from="1564512140549" duration="1117000" />
+      <workItem from="1565455325001" duration="3555000" />
+      <workItem from="1565541313299" duration="35587000" />
+      <workItem from="1565697871070" duration="678000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>193</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>191</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>192</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="rp " language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
