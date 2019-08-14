@@ -109,7 +109,7 @@ public:
         /* Cannot fail ??? */
 
         /* SSL_load_error_strings loads both libssl and libcrypto strings */
-        /* ERR_load_crypto_strings(); */
+//        ERR_load_crypto_strings();
         /* Cannot fail ??? */
     }
 
@@ -198,10 +198,10 @@ class HTTPSClient {
 
     static void print_error_string(unsigned long err, const char *const label) {
         const char *const str = ERR_reason_error_string(err);
-//        if (str)
-//            fprintf(stderr, "%s\n", str);
-//        else
-//            fprintf(stderr, "%s failed: %lu (0x%lx)\n", label, err, err);
+        if (str)
+            fprintf(stderr, "%s\n", str);
+        else
+            fprintf(stderr, "%s failed: %lu (0x%lx)\n", label, err, err);
     }
 
 public:
@@ -234,7 +234,7 @@ public:
 
         if (ctx == nullptr) {
             print_error_string(ssl_err, "SSL_CTX_new");
-            throw std::runtime_error("");
+            throw std::runtime_error("SSL_CTX_new");
         }
 
         /* https://www.openssl.org/docs/ssl/ctx_set_verify.html */
@@ -267,17 +267,17 @@ public:
 
         if (_web == nullptr) {
             print_error_string(ssl_err, "BIO_new_ssl_connect");
-            throw std::runtime_error("");
+            throw std::runtime_error("BIO_new_ssl_connect");
         }
 
         /* https://www.openssl.org/docs/crypto/BIO_s_connect.html */
-        std::string hostname = host + ":" + std::to_string(port);
+        std::string hostname = _host + ":" + std::to_string(port);
         res = BIO_set_conn_hostname(_web, hostname.c_str());
         ssl_err = ERR_get_error();
 
         if (res != 1) {
             print_error_string(ssl_err, "BIO_set_conn_hostname");
-            throw std::runtime_error("");
+            throw std::runtime_error("BIO_set_conn_hostname");
         }
 
         /* https://www.openssl.org/docs/crypto/BIO_f_ssl.html */
@@ -287,7 +287,7 @@ public:
 
         if (_ssl == nullptr) {
             print_error_string(ssl_err, "BIO_get_ssl");
-            throw std::runtime_error("");
+            throw std::runtime_error("BIO_get_ssl");
         }
 
         /* https://www.openssl.org/docs/ssl/ssl.html#DEALING_WITH_PROTOCOL_CONTEXTS */
@@ -317,16 +317,18 @@ public:
 
         if (_out == nullptr) {
             print_error_string(ssl_err, "BIO_new_fp");
-            throw std::runtime_error("");
+            throw std::runtime_error("BIO_new_fp");
         }
 
         /* https://www.openssl.org/docs/crypto/BIO_s_connect.html */
         res = BIO_do_connect(_web);
         ssl_err = ERR_get_error();
+        const auto sysErrorCode = errno;
+        const auto sslErrorCode = ERR_get_error();
 
         if (res != 1) {
             print_error_string(ssl_err, "BIO_do_connect");
-            throw std::runtime_error("");
+            throw std::runtime_error("BIO_do_connect");
         }
 
         /* https://www.openssl.org/docs/crypto/BIO_f_ssl.html */
@@ -335,7 +337,7 @@ public:
 
         if (res != 1) {
             print_error_string(ssl_err, "BIO_do_handshake");
-            throw std::runtime_error("");
+            throw std::runtime_error("BIO_do_handshake");
         }
 
         /**************************************************************************************/
@@ -381,7 +383,7 @@ public:
         if (cert == nullptr) {
             /* Hack a code for print_error_string. */
             print_error_string(X509_V_ERR_APPLICATION_VERIFICATION, "SSL_get_peer_certificate");
-            throw std::runtime_error("");
+            throw std::runtime_error("SSL_get_peer_certificate");
         }
 
         /* Step 2: verify the result of chain verifcation             */
@@ -392,7 +394,7 @@ public:
         if (res != X509_V_OK) {
             /* Hack a code into print_error_string. */
             print_error_string((unsigned long) res, "SSL_get_verify_results");
-//            throw std::runtime_error("");
+//            throw std::runtime_error("SSL_get_verify_results");
         }
 
         /* Step 3: hostname verifcation.   */

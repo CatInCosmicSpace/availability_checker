@@ -188,7 +188,7 @@ int main(int argc, char **argv) {
         }
     }
 
-#define HOST_CERT "./fullchain.pem"
+#define HOST_CERT "fullchain.pem"
     HTTPSClient client("skypebot.tk", 8081, HOST_CERT);
     HTTPResponse result = client.post("/report", reportString, "text/plain");
     if (result)

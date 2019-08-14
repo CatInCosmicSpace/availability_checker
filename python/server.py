@@ -31,17 +31,22 @@ def report():
     try:
         addresses = request.data.decode().split('\n')
         addresses = list(filter(bool, addresses))
-        img = Image.new('RGB', (500, 20 * len(addresses) - 1), color=(255, 255, 255))
-        font = ImageFont.truetype("arial.ttf", 15)
-        d = ImageDraw.Draw(img)
-        for i in range(len(addresses)):
-            d.text((10, 20 * (i)), addresses[i], fill=(0, 0, 0), font=font)
-        img.save("addresses.png")
-        for i in contacts:
-            bot.send_media(i[2], i[1], "image/png", "data:image/png;base64," +
-                           base64.b64encode(open("addresses.png", "rb").read()).decode(),
-                           "Отчет о доступности ресурсов")
-        return 'Data sent to all contacts successfully'
+        print("addresses is:", addresses)
+        if (len(addresses) > 0):
+            img = Image.new('RGB', (500, 20 * len(addresses) - 1), color=(255, 255, 255))
+            font = ImageFont.truetype("arial.ttf", 15)
+            d = ImageDraw.Draw(img)
+            for i in range(len(addresses)):
+                d.text((10, 20 * (i)), addresses[i], fill=(0, 0, 0), font=font)
+            img.save("addresses.png")
+            print("image saved")
+            for i in contacts:
+                bot.send_media(i[2], i[1], "image/png", "data:image/png;base64," +
+                               base64.b64encode(open("addresses.png", "rb").read()).decode(),
+                               "Отчет о доступности ресурсов")
+            return 'Data sent to all contacts successfully'
+        else:
+            return 'No data provided'
     except:
         return '500'
 
